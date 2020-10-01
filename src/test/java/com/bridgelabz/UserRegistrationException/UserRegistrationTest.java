@@ -40,7 +40,7 @@ public class UserRegistrationTest {
 	    	 Assert.assertEquals(false,result);
 	    }catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_NULL, e.exceptionType);
-			Assert.assertEquals("Enter Proper Mood", e.getMessage(userRegistration.firstName));
+			Assert.assertEquals("Enter Proper Mood", e.getMessage());
 	    }
 	}
 	
