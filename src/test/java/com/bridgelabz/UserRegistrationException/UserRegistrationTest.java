@@ -126,7 +126,7 @@ public class UserRegistrationTest {
 	public void givenEmailAddress_WhenNull_ShouldReturnEnterProperMood() {
 		 UserRegistration userRegistration = new UserRegistration();
 		 try {
-	    	 boolean result = userRegistration.checkLastName(null);
+	    	 boolean result = userRegistration.checkEmailAddress(null);
 	    	 Assert.assertEquals(false,result);
 	    }catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_NULL, e.exceptionType);
@@ -138,7 +138,7 @@ public class UserRegistrationTest {
 	public void givenEmailAddress_WhenEmpty_ShouldReturnEnterProperMood() {
 	UserRegistration userRegistration = new UserRegistration();
 		try {
-		    boolean result = userRegistration.checkLastName("");
+		    boolean result = userRegistration.checkEmailAddress("");
 		    Assert.assertEquals(false,result);
 		}catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_EMPTY, e.exceptionType);
@@ -164,7 +164,7 @@ public class UserRegistrationTest {
 	public void givenMobileNumber_WhenNull_ShouldReturnEnterProperMood() {
 		 UserRegistration userRegistration = new UserRegistration();
 		 try {
-	    	 boolean result = userRegistration.checkLastName(null);
+	    	 boolean result = userRegistration.checkMobileNumber(null);
 	    	 Assert.assertEquals(false,result);
 	    }catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_NULL, e.exceptionType);
@@ -176,7 +176,7 @@ public class UserRegistrationTest {
 	public void givenMobileNumber_WhenEmpty_ShouldReturnEnterProperMood() {
 	UserRegistration userRegistration = new UserRegistration();
 		try {
-		    boolean result = userRegistration.checkLastName("");
+		    boolean result = userRegistration.checkMobileNumber("");
 		    Assert.assertEquals(false,result);
 		}catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_EMPTY, e.exceptionType);
@@ -209,7 +209,7 @@ public class UserRegistrationTest {
 	public void givenPassword_WhenNull_ShouldReturnEnterProperMood() {
 		 UserRegistration userRegistration = new UserRegistration();
 		 try {
-	    	 boolean result = userRegistration.checkLastName(null);
+	    	 boolean result = userRegistration.checkPassword(null);
 	    	 Assert.assertEquals(false,result);
 	    }catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_NULL, e.exceptionType);
@@ -221,7 +221,7 @@ public class UserRegistrationTest {
 	public void givenPassword_WhenEmpty_ShouldReturnEnterProperMood() {
 	UserRegistration userRegistration = new UserRegistration();
 		try {
-		    boolean result = userRegistration.checkLastName("");
+		    boolean result = userRegistration.checkPassword("");
 		    Assert.assertEquals(false,result);
 		}catch(UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.ENTERED_EMPTY, e.exceptionType);
